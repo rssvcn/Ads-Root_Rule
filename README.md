@@ -9,7 +9,7 @@
 - 规则类型：AdGuard 过滤语法，使用**修饰符**，不兼容 hosts、AdGuard Home、其他DNS过滤器
 
 ## ✅ 拦截案例展示
-![拦截效果图](./img/demo.png)
+![拦截效果图](./demo.png)
 
 ## 使用方式
 1. 打开 AdGuard 安卓客户端 → 过滤器 → 自定义过滤器
