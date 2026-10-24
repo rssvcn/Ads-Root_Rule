@@ -1,0 +1,7 @@
+! Title: Root安卓广告拦截规则
+! Description: Root安卓专用，AdGuard安卓客户端专属，使用AdGuard修饰符，拦截国内APP广告、信息流卡片广告、埋点追踪
+! Version: 1.0.0
+! TimeUpdated: 2026-10-25T00:00:00+00:00
+! Expires: 4 hour
+! Homepage: https://github.com/rssvcn/Ads-Root_Rule
+! License: https://github.com/rssvcn/Ads-Root_Rule/raw/main/LICENSE
