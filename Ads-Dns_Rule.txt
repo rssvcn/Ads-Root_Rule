@@ -1,0 +1,7 @@
+! Title: Root安卓DNS广告拦截规则
+! Description: Root安卓DNS过滤专用，拦截广告SDK、、埋点追踪域名，兼容AdGuard Home、AdGuard DNS
+! Version: 1.0.0
+! TimeUpdated: 2026-10-25T00:00:00+00:00
+! Expires: 12 hour
+! Homepage: https://github.com/rssvcn/Ads-Root_Rule
+! License: https://github.com/rssvcn/Ads-Root_Rule/raw/main/LICENSE
