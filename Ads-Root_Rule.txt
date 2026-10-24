@@ -5,3 +5,54 @@
 ! Expires: 4 hour
 ! Homepage: https://github.com/rssvcn/Ads-Root_Rule
 ! License: https://github.com/rssvcn/Ads-Root_Rule/raw/main/LICENSE
+#微博
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId mine_attent_title)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq type mineAttent)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(has adData)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..promotion
+||api.weibo.cn/2/profile/me^$replace=/"card_type":236/"card_type":236999/
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId 100505_-_mypay_new)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId 100505_-_aibanliao)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId 100505_-_worldcup)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId 100505_-_chaoyouqu)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId 100505_-_manage)]
+||api.weibo.cn/2/profile/me^$jsonprune=\$..items[?(key-eq itemId 100505_-_renwu)]
+||wbapp.mobile.sina.cn/wbapplua/wbpullad.lua
+||api.weibo.cn/2/statuses/container_detail^$jsonprune=\$..is_ad_card
+||api.weibo.cn/2/guest/container_detail^$jsonprune=\$..is_ad_card
+||api.weibo.cn/2/statuses/container_detail^$jsonprune=\$..pageHeader
+||bootpreload.uve.weibo.com/v2/ad/preload
+||api.weibo.cn/2/comments/build_comments^$jsonprune=\$..ad_actionlogs
+||api.weibo.cn/2/guest/container_detail^$jsonprune=\$..promotion
+||api.weibo.cn/2/guest/container_timeline_hot^$jsonprune=\$..promotion
+||api.weibo.cn/2/guest/container_detail^$jsonprune=\$..photo_callback_params
+||api.weibo.cn/2/guest/container_timeline_hot^$jsonprune=\$..photo_callback_params
+||api.weibo.cn/2/guest/container_detail^$jsonprune=\$..[adType\, commentAdType\, commentAdSubType\, ad_state\, mblogtypename]
+||api.weibo.cn/2/guest/container_timeline_hot^$jsonprune=\$..[adType\, commentAdType\, commentAdSubType\, ad_state\, mblogtypename]
+||api.weibo.cn/2/statuses/$jsonprune=\$..ad_send_monitor
+||api.weibo.cn/2/statuses/$jsonprune=\$..url_marked
+||api.weibo.cn/2/statuses/container_detail_comment^$jsonprune=\$..datas[?(has adType)]
+||api.weibo.cn/2/guest/container_detail_comment^$jsonprune=\$..datas[?(has adType)]
+||api.weibo.cn/2/statuses/container_timeline_hot^$jsonprune=\$..items[?(has ad_render_ext)]
+||api.weibo.cn/2/guest/container_timeline_hot^$jsonprune=\$..items[?(has ad_render_ext)]
+||api.weibo.cn/2/statuses/container_detail^$jsonprune=\$..items[?(has is_ad_card)]
+||api.weibo.cn/2/guest/container_detail^$jsonprune=\$..items[?(has is_ad_card)]
+||api.weibo.cn/2/statuses/container_detail_comment^$jsonprune=\$..items[?(key-eq type trend)]
+||api.weibo.cn/2/guest/container_detail_comment^$jsonprune=\$..items[?(key-eq type trend)]
+||api.weibo.cn/2/statuses/container_timeline_hot^$jsonprune=\$..data[?(has ad_render_ext)]
+||api.weibo.cn/2/guest/container_timeline_hot^$jsonprune=\$..data[?(has ad_render_ext)]
+||api.weibo.cn/2/comments/build_comments^$jsonprune=\$..datas[?(has commentAdType)]
+#酷安
+||api.coolapk.com/v6/account/loadConfig^$jsonprune=\$.data[?(key-eq 'entityId' 14809)]
+||api2.coolapk.com/v6/feed/detail^$jsonprune=\$..[detailSponsorCard\, targetRow]
+#vivo 商城
+||eden.vivo.com.cn/banner/advertisement^$
+||eden.vivo.com.cn/homePageTopActivity/get^
+||eden.vivo.com.cn/floating/window^
+#vivo天气
+||st-ads-jssdk.vivo.com.cn/ad_req^
+||st-ads-jssdk.vivo.com.cn/ad_filter^
+||st-ads-jssdk.vivo.com.cn/load_err^
+||st-ads-jssdk.vivo.com.cn/load_script^
+||adreq.vivo.com.cn/sdk/feeds/req^
+||browserstatic.vivo.com.cn/infoStreamAndAd/
