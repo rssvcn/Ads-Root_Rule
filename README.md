@@ -9,7 +9,19 @@
   - **Ads-Root_Rule.txt**：AdGuard 安卓客户端专属，使用AdGuard修饰符，**不兼容 hosts、AdGuard Home、其他DNS过滤器**
   - **Ads-Dns_Rule.txt**：标准 AdGuard 域名规则（`||域名^` 语法），AdGuard 全系通用（AdGuard安卓 / AdGuard Home / AdGuard DNS），**不支持 hosts、dnsmasq**
 
-## ✅ 拦截案例展示
+## 支持应用名单
+<details>
+<summary>点击展开查看（持续更新，QQ、微信不支持！）</summary>
+
+- 酷安
+- 微博
+- 闲鱼
+- vivo商城
+- vivo天气
+
+</details>
+
+## 拦截案例展示
 ![拦截效果图](./demo.png)
 
 ## 订阅链接
@@ -19,13 +31,13 @@
 `https://raw.githubusercontent.com/rssvcn/Ads-Root_Rule/main/Ads-Dns_Rule.txt`
 
 ## 使用方式
-> 💡 推荐方案：AdGuard安卓客户端内**同时订阅两条规则**，DNS规则负责前置域名拦截，修饰符规则做APP精准管控，拦截效果更佳。
+> 推荐方案：AdGuard安卓客户端内**同时订阅两条规则**，DNS规则负责前置域名拦截，修饰符规则做APP精准管控，拦截效果更佳。
 
 ### Ads-Root_Rule.txt（AdGuard 安卓客户端）
 1. 打开 AdGuard 安卓客户端 → 过滤器 → 自定义过滤器
 2. 添加过滤器，填入上方对应 raw 链接
 3. 启用规则，配置 AdGuard HTTPS 过滤（证书需安装至系统根证书，依赖Root环境）
-> ⚠️ 重要：未Root设备无法正常使用本规则配套的证书与拦截能力；本规则依赖AdGuard专属修饰符，**无法在 AdGuard Home、hosts、DNSMasq 等平台加载**
+> 重要：未Root设备无法正常使用本规则配套的证书与拦截能力；本规则依赖AdGuard专属修饰符，**无法在 AdGuard Home、hosts、DNSMasq 等平台加载**
 
 ### Ads-Dns_Rule.txt（AdGuard 全系通用）
 1. AdGuard Home / AdGuard安卓：过滤器 → 自定义过滤列表，填入链接
