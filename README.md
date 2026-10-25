@@ -35,7 +35,7 @@
 
 ### Ads-Root_Rule.txt（AdGuard 安卓客户端）
 1. 打开 AdGuard 安卓客户端 → 过滤器 → 自定义过滤器
-2. 添加过滤器，填入上方对应 raw 链接
+2. 添加过滤器，填入上方对应 raw 链接（需勾选:受信任的过滤器）
 3. 启用规则，配置 AdGuard HTTPS 过滤（证书需安装至系统根证书，依赖Root环境）
 > 重要：未Root设备无法正常使用本规则配套的证书与拦截能力；本规则依赖AdGuard专属修饰符，**无法在 AdGuard Home、hosts、DNSMasq 等平台加载**
 
