@@ -85,4 +85,5 @@
 ||open.e.kuaishou.cn^
 ||lookup.api.bsb.baidu.com^
 ||kadmimage.biz.weibo.com^
-||dsp.ads.umeng.com^
+||ads.umeng.com^
+||yixiu-abtest.alicdn.com^
