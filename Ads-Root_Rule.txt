@@ -56,3 +56,8 @@
 ||st-ads-jssdk.vivo.com.cn/load_script^
 ||adreq.vivo.com.cn/sdk/feeds/req^
 ||browserstatic.vivo.com.cn/infoStreamAndAd/
+#贴吧
+||abtest.alibaba.com/v4.0/api/experiment/allocate
+||acs.m.goofish.com/gw/mtop.taobao.idlecommerce.splash.async.ads/
+#中国移动云盘
+||ad.mcloud.139.com/advertapi/
